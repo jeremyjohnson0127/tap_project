@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUITAR_HERO_BASE", "GUITAR_HERO_BASE.csproj", "{26533533-F655-BC23-6028-058BE75E5D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUITAR_HERO_BASE.Editor", "GUITAR_HERO_BASE.Editor.csproj", "{82DE7580-A1FC-D302-D095-30F4DD7CC658}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26533533-F655-BC23-6028-058BE75E5D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26533533-F655-BC23-6028-058BE75E5D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26533533-F655-BC23-6028-058BE75E5D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26533533-F655-BC23-6028-058BE75E5D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DE7580-A1FC-D302-D095-30F4DD7CC658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DE7580-A1FC-D302-D095-30F4DD7CC658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DE7580-A1FC-D302-D095-30F4DD7CC658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DE7580-A1FC-D302-D095-30F4DD7CC658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

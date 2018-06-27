@@ -1,0 +1,5 @@
+First of all to test the demos add all scenes in our demo folder in the Build Settings and leave the menu as first scene:
+Also to prevent some bugs Set Internet Access in player settings to require
+
+DOC:
+https://docs.google.com/document/d/1mrvB1YDiOezZrICm_mNbeJfRagOiw5KxCt2QTeamLNs/edit?usp=sharing
