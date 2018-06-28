@@ -17,14 +17,11 @@ end() {
     out "Finished: $*"
 }
 
-PROJECT_ROOT = $PWD/tap_project
-UNITY_DOWNLOAD_DIR = $PROJECT_ROOT/unity
-UNITY_PKG_LOCATION = $UNITY_DOWNLOAD_DIR/Unity.pkg
-UNITY_PKG_URL = https://download.unity3d.com/download_unity/5d30cf096e79/MacEditorInstaller/Unity-2017.1.1f1.pkg
-IOS_PKG_LOCATION = $UNITY_DOWNLOAD_DIR/Unity-iOS.pkg
-IOS_PKG_URL = http://netstorage.unity3d.com/unity/5d30cf096e79/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor.pkg
-UNITY_CIRCLE_XML_DIR = $CIRCLE_TEST_REPORTS/Unity
-UNITY_CIRCLE_XML_OUT_PATH = $UNITY_CIRCLE_XML_DIR/junit.xml
+UNITY_DOWNLOAD_DIR="${UNITY_DOWNLOAD_DIR:-`pwd`/unity}"
+UNITY_PKG_LOCATION=${UNITY_PKG_LOCATION:-"$UNITY_DOWNLOAD_DIR"/Unity.pkg}
+UNITY_PKG_URL=${UNITY_PKG_URL:-https://download.unity3d.com/download_unity/5d30cf096e79/MacEditorInstaller/Unity-2017.1.1f1.pkg}
+IOS_PKG_LOCATION=${IOS_PKG_LOCATION:-"$UNITY_DOWNLOAD_DIR"/Unity-iOS.pkg}
+IOS_PKG_URL=${IOS_PKG_URL:-http://netstorage.unity3d.com/unity/5d30cf096e79/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor.pkg}
 
 if [[ ! -e $UNITY_PKG_LOCATION ]] ; then
     echo $UNITY_DOWNLOAD_DIR
