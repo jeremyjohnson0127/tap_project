@@ -25,7 +25,8 @@ jobs:
       # Build the app and run tests
       - run:
           name: install Unity
-          command: ./scripts/install_unity.sh
+          command:
+            - sh ./scripts/install_unity.sh
       
       - save_cache:
           key: unity
