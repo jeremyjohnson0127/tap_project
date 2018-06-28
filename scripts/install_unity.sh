@@ -26,7 +26,8 @@ IOS_PKG_URL=${IOS_PKG_URL:-http://netstorage.unity3d.com/unity/5d30cf096e79/MacE
 
 if [[ ! -e $UNITY_PKG_LOCATION ]] ; then
     echo $UNITY_DOWNLOAD_DIR
-    echo $UNITY_PKG_URL
+    echo $UNITY_PKG_LOCATION
+    echo $PWD
     out "Downloading Unity to $UNITY_DOWNLOAD_DIR"
     out "Downloading from {$UNITY_PKG_URL}"
     mkdir -p "$UNITY_DOWNLOAD_DIR"
