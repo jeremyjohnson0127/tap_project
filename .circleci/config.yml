@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build:
-
     environment:
       PROJECT_ROOT: $PWD/tap_project
       UNITY_DOWNLOAD_DIR: $PROJECT_ROOT/unity
@@ -14,7 +13,7 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "9.4"
+      xcode: "9.2.0"
 
     steps:
       - checkout
