@@ -17,12 +17,6 @@ end() {
     out "Finished: $*"
 }
 
-PROJECT_ROOT=${PROJECT_ROOT:-$(pwd)}
-SCRIPTS_ROOT="$PROJECT_ROOT/scripts"
-UNITY_APP_PATH="/Applications/Unity/Unity.app"
-UNITY_PATH="$UNITY_APP_PATH/Contents/MacOS/Unity"
-UNITY_PACKAGE_MANAGER_PATH="$UNITY_APP_PATH/Contents/PackageManager/Unity/PackageManager"
-
 # set UNITY_DOWNLOAD_DIR if it hasn't been set. It may have been set from 
 UNITY_DOWNLOAD_DIR="${UNITY_DOWNLOAD_DIR:-`pwd`/unity}"
 UNITY_PKG_LOCATION=${UNITY_PKG_LOCATION:-"$UNITY_DOWNLOAD_DIR"/Unity.pkg}
