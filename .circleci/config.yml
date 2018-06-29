@@ -7,11 +7,8 @@ jobs:
       xcode: "9.2.0"
 
     steps:
-      run: echo 'export UNITY_DOWNLOAD_DIR=/path/:$PROJECT_ROOT' >> $BASH_ENV
-      run: echo 'export UNITY_DOWNLOAD_DIR2=/path/:$PROJECT_ROOT' >> $BASH_ENV
-      
       - checkout
-          
+
       - restore_cache:
           keys:
             - unity
