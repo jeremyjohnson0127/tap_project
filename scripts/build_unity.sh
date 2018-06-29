@@ -31,9 +31,8 @@ echo "returning the license"
   -projectPath "$PROJECT_ROOT" \
   -quit
 
-cp "$UNITY_IOS_LOG_PATH" $CIRCLE_ARTIFACTS/unity_return_key.log
 #
-cd Builds/iOS
+cd ../Builds/iOS
 # xcodebuild \
 #   -project Unity-iPhone.xcodeproj \
 #   -scheme Unity-iPhone \
