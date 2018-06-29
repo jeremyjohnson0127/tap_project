@@ -7,10 +7,7 @@ jobs:
       xcode: "9.2.0"
 
     steps:
-      - run:
-        command: |
-          PROJECT_ROOT=${PWD} \
-          UNITY_DOWNLOAD_DIR=${PROJECT_ROOT}/unity
+      - checkout
           
       - restore_cache:
           keys:
