@@ -22,10 +22,16 @@ jobs:
           key: unity
           paths:
             - /Applications/Unity/Unity.app
+
       # Activate unity license
+      # - run:
+      #    name: activate unity license
+      #    command: ./scripts/active_license.sh
+
+      # Build project for iOS
       - run:
-          name: activate unity license
-          command: ./scripts/active_license.sh
+          name: build project
+          command: ./scripts/build_unity.sh
 
 workflows:
   version: 2
