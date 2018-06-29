@@ -7,8 +7,6 @@ jobs:
       xcode: "9.2.0"
 
     steps:
-      - checkout
-
       - run:
         command: |
           PROJECT_ROOT=${PWD} \
