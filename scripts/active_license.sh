@@ -3,7 +3,7 @@
 . "$(dirname "$0")"/common.sh
 
 has_license_credentials() {
-    if [[ -n $UNITY_USERNAME && -n $UNITY_PASSWORD  ]] ; then
+    if [[ -n $UNITY_USERNAME && -n $UNITY_PASSWORD && -n $UNITY_SERIAL  ]] ; then
         return 0
     else
         return 1
@@ -29,6 +29,7 @@ do
     "$UNITY_PATH" \
         -quit \
         -batchmode \
+        -serial "$UNITY_SERIAL" \
         -username "$UNITY_USERNAME" \
         -password "$UNITY_PASSWORD" \
         -logFile "$UNITY_LICENSE_LOG_PATH"
