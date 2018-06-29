@@ -21,11 +21,11 @@ jobs:
       - save_cache:
           key: unity
           paths:
-            - unity
+            - /Applications/Unity/Unity.app
       # Activate unity license
       - run:
           name: activate unity license
-          command: ./active_license.sh
+          command: ./scripts/active_license.sh
 
 workflows:
   version: 2
