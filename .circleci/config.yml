@@ -24,14 +24,14 @@ jobs:
             - /Applications/Unity/Unity.app
 
       # Activate unity license
-      # - run:
-      #    name: activate unity license
-      #    command: ./scripts/active_license.sh
+      - run:
+         name: activate unity license
+         command: ./scripts/active_license.sh
 
       # Build project for iOS
-      - run:
-          name: build project
-          command: ./scripts/build_unity.sh
+      #- run:
+      #    name: build project
+      #    command: ./scripts/build_unity.sh
 
 workflows:
   version: 2
