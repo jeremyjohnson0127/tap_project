@@ -27,17 +27,15 @@ jobs:
       - run:
           name: install Unity
           command: ./scripts/install_unity.sh
-
-      // Activate unity license
-      - run:
-          name: activate unity license
-          command: ./active_license.sh
       
       - save_cache:
           key: unity
           paths:
             - unity
-
+      # Activate unity license
+      - run:
+          name: activate unity license
+          command: ./active_license.sh
 
 workflows:
   version: 2
