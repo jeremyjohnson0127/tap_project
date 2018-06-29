@@ -8,6 +8,7 @@ echo "Attempting to build project for iOS"
 "$UNITY_PATH" \
   -batchmode \
   -silent-crashes \
+  -serial "$UNITY_SERIAL" \
   -username "$UNITY_USERNAME" \
   -password "$UNITY_PASSWORD" \
   -logFile "$UNITY_IOS_LOG_PATH" \
@@ -23,6 +24,7 @@ echo "returning the license"
   -batchmode \
   -returnlicense \
   -silent-crashes \
+  -serial "$UNITY_SERIAL" \
   -username "$UNITY_USERNAME" \
   -password "$UNITY_PASSWORD" \
   -logFile "$UNITY_IOS_LOG_PATH" \
