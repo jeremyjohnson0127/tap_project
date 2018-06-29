@@ -9,7 +9,7 @@ IOS_PKG_LOCATION=${IOS_PKG_LOCATION:-"$UNITY_DOWNLOAD_DIR"/Unity-iOS.pkg}
 IOS_PKG_URL=${IOS_PKG_URL:-http://netstorage.unity3d.com/unity/5d30cf096e79/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor.pkg}
 
 if [[ ! -e $UNITY_PKG_LOCATION ]] ; then
-    echo `$PROJECT_ROOT`
+    echo $PROJECT_ROOT
     echo $UNITY_DOWNLOAD_DIR
     out "Downloading Unity to $UNITY_DOWNLOAD_DIR"
     out "Downloading from {$UNITY_PKG_URL}"

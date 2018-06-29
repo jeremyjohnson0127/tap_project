@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    
+    environment:
+      PROJECT_ROOT: ${`pwd`/tap_project}
+      UNITY_DOWNLOAD_DIR: ${`PROJECT_ROOT`/unity}
 
     # Specify the Xcode version to use
     macos:
@@ -8,7 +12,7 @@ jobs:
 
     steps:
       - checkout
-
+          
       - restore_cache:
           keys:
             - unity
