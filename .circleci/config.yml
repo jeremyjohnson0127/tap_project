@@ -8,6 +8,11 @@ jobs:
 
     steps:
       - checkout
+
+      - run:
+        name: interpolating environment variables
+        command: |
+          echo 'export UNITY_DOWNLOAD_DIR=/path/:$PROJECT_ROOT'
           
       - restore_cache:
           keys:
