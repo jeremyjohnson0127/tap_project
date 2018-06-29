@@ -3,8 +3,8 @@ jobs:
   build:
     
     environment:
-      PROJECT_ROOT: ${`pwd`/tap_project}
-      UNITY_DOWNLOAD_DIR: ${`PROJECT_ROOT`/unity}
+      PROJECT_ROOT: "${`pwd`/tap_project}"
+      UNITY_DOWNLOAD_DIR: "\${`PROJECT_ROOT`/unity}"
 
     # Specify the Xcode version to use
     macos:
