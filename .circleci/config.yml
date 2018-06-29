@@ -8,6 +8,11 @@ jobs:
 
     steps:
       - checkout
+
+      - run:
+        command: |
+          PROJECT_ROOT=${PWD} \
+          UNITY_DOWNLOAD_DIR=${PROJECT_ROOT}/unity
           
       - restore_cache:
           keys:
