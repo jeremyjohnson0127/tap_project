@@ -12,7 +12,8 @@ jobs:
       - run:
         name: interpolating environment variables
         command: |
-          echo 'export UNITY_DOWNLOAD_DIR=/path/:$PROJECT_ROOT'
+          echo 'export UNITY_DOWNLOAD_DIR=/path/:$PROJECT_ROOT' >> $BASH_ENV
+          echo 'export UNITY_DOWNLOAD_DIR2=/path/:$PROJECT_ROOT' >> $BASH_ENV
           
       - restore_cache:
           keys:
